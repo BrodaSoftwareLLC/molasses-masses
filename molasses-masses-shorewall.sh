@@ -14,8 +14,8 @@ fi
 
 
 # URLs
-IPV4_URL="https://mm.broda.io/mm/combined-v4.txt?key=$API_KEY"
-IPV6_URL="https://mm.broda.io/mm/combined-v6.txt?key=$API_KEY"
+IPV4_URL="https://pd.broda.io/mm/combined-v4.txt?key=$API_KEY"
+IPV6_URL="https://pd.broda.io/mm/combined-v6.txt?key=$API_KEY"
 
 # Temporary download files
 TMP_IPV4="/tmp/combined-v4.txt"
