@@ -3,6 +3,7 @@
 set -euo pipefail
 
 API_KEY=""
+PD_HOST="pd.broda.io"
 
 # DO NOT EDIT BELOW THIS LINE
 
@@ -138,8 +139,8 @@ fi
 
 
 # URLs
-IPV4_URL="https://pd.broda.io/mm/combined-v4.txt?key=$API_KEY"
-IPV6_URL="https://pd.broda.io/mm/combined-v6.txt?key=$API_KEY"
+IPV4_URL="https://${PD_HOST}/mm/combined-v4.txt"
+IPV6_URL="https://${PD_HOST}/mm/combined-v6.txt"
 
 # Temporary download files
 TMP_IPV4="/tmp/combined-v4.txt"
@@ -187,13 +188,13 @@ check_ipv6_available
 
 # Download IPv4 addresses
 step "Downloading IPv4 blocklist..."
-curl -sfSL "$IPV4_URL" -o "$TMP_IPV4" || { echo "IPv4 download failed"; exit 1; }
+curl -sfSL -H "X-Broda-Key: ${API_KEY}" "$IPV4_URL" -o "$TMP_IPV4" || { echo "IPv4 download failed"; exit 1; }
 step "Validating IPv4 blocklist..."
 validate_subnet_list "$TMP_IPV4" ipv4
 
 # Download IPv6 addresses
 step "Downloading IPv6 blocklist..."
-curl -sfSL "$IPV6_URL" -o "$TMP_IPV6" || { echo "IPv6 download failed"; exit 1; }
+curl -sfSL -H "X-Broda-Key: ${API_KEY}" "$IPV6_URL" -o "$TMP_IPV6" || { echo "IPv6 download failed"; exit 1; }
 step "Validating IPv6 blocklist..."
 validate_subnet_list "$TMP_IPV6" ipv6
 
