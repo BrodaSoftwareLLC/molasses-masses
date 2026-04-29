@@ -6,7 +6,7 @@ Project Molasses-Masses is designed to provide a dynamically updated list of hos
 
 Acknowledging that hosting providers themselves are not inherently problematic, some of their customers may have malicious intentions. Therefore, we adopt a "block first" approach, creating exceptions to allow legitimate traffic through as needed.
 
-This project is currently tracking `16605` IPv4 Subnets and `3165` IPv6 Subnets.
+This project is currently tracking `16604` IPv4 Subnets and `3138` IPv6 Subnets.
 
 ## :hammer_and_wrench: How It Works
 
