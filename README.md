@@ -6,24 +6,14 @@ Project Molasses-Masses is designed to provide a dynamically updated list of hos
 
 Acknowledging that hosting providers themselves are not inherently problematic, some of their customers may have malicious intentions. Therefore, we adopt a "block first" approach, creating exceptions to allow legitimate traffic through as needed.
 
-This project is currently tracking `17033` IPv4 Subnets and `2978` IPv6 Subnets.
+This project is currently tracking `17032` IPv4 Subnets and `2890` IPv6 Subnets.
 
 ## :hammer_and_wrench: How It Works
 
 The project uses a Python script to fetch and process IP prefixes associated with various hosting providers.
 
-## :email: To Access
-
-To access the IPv4 and IPv6 prefixes available for download, please send an email to `get-api-key <at> mm.broda.io` with the following information:
-1. Name:
-2. Email:
-3. Purpose: Lab/Home user
-4. Company (if applicable) and number of users:
-
-(For company/corporate use, there is a licensing cost associated. Include interest and pricing will be sent through) 
-
-The email will be where the usage keys are sent to along with instructions on how to use.
-
+## :bulb: To Access
+Please browse to [Broda Software LLC](https://broda.io/products/molasses-masses)'s website to request a 7 day free trial.
 
 ## :warning: Disclaimer
 
